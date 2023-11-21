@@ -325,10 +325,10 @@ ul {
   transition: var(--transition);
 }
 
-.prev:hover, .next:hover{
+.prev:hover,
+.next:hover {
   background: var(--primary-500);
 }
-
 
 .prev {
   left: 0;
@@ -343,14 +343,35 @@ ul {
     max-width: 45rem;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     width: 2rem;
     height: 2rem;
     font-size: 1.5rem;
   }
 }
 
-
 .next-slide {
   transform: translateX(200%);
+}
+
+/* ==================== Slick Carousel ==================== */
+
+.slick-container {
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 80vw;
+  max-width: 800px;
+  text-align: center;
+}
+
+.slick-slide img {
+  display: inline-block;
+}
+
+.slick-prev::before {
+  color: var(--primary-500) !important;
+}
+.slick-next::before {
+  color: var(--primary-500) !important;
 }

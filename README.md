@@ -5,3 +5,4 @@
 // commands
 - npm install
 - npm start
+- npm install react-slick slick-carousel --save
